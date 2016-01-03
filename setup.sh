@@ -25,7 +25,7 @@
 	    os=$(lsb_release -s -d)
 	elif [ -f /etc/debian_version ]; then
 			 os="Debian $(cat /etc/debian_version)"
-			sudo apt-get	install selinux
+			sudo apt-get install -y selinux
 	elif [ -f /etc/redhat-release ]; then
 	     os=`cat /etc/redhat-release`
 	else
