@@ -1,0 +1,13 @@
+module appsec 1.0.0
+
+require {
+	type unconfined_t;
+	class process transition;
+}
+
+type appsec_t;
+type appsec_exec_t;
+
+role unconfirmed_r types appsec_t
+
+type transition unconfined_t appsec_exec_t : process appsec_t
